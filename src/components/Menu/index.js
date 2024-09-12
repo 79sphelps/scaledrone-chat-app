@@ -107,7 +107,7 @@ export default function Menu({
               <span className="slider round"></span>
             </label>
           </li>
-          {/* <li className="main-nav__menu-item" key="4">
+          <li className="main-nav__menu-item" key="4">
             <span
               className="main-nav__span-action"
               onClick={() =>
@@ -117,7 +117,7 @@ export default function Menu({
               Reset profile
             </span>
           </li>
-          <li className="main-nav__menu-item" key="5">
+          {/* <li className="main-nav__menu-item" key="5">
             <ul className="main-nav__room-list">
               <li
                 className={
@@ -147,8 +147,8 @@ export default function Menu({
                 </li>
               ))}
             </ul>
-          </li>
-          <li className="main-nav__menu-item" key="6">
+          </li> */}
+          {/* <li className="main-nav__menu-item" key="6">
             <span
               className="main-nav__span-action"
               onClick={() => handleExit(saveChat, chat, drone)}
