@@ -46,7 +46,7 @@ export default function Menu({
         <span className="main-nav__span"></span>
 
         <ul className="main-nav__menu">
-          <li className="main-nav__menu-item" key="1">
+          {/* <li className="main-nav__menu-item" key="1">
             Dark/Light theme
             <label className="switch">
               {chatTheme === "dark" ? (
@@ -66,7 +66,7 @@ export default function Menu({
 
               <span className="slider--theme round"></span>
             </label>
-          </li>
+          </li> */}
           <li className="main-nav__menu-item" key="2">
             Save chat on exit
             <label className="switch">

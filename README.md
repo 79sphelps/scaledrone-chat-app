@@ -1,6 +1,15 @@
 CodeSandbox live example: https://swocq.csb.app/
 
 
+
+**Use: nvm use 15.12.0**
+--> this will prevent the legacy code error
+--> see the Scaledrone build settings in the dashboard site for how to build/run with Node 20.12.2 (it uses the legacy option switch)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
