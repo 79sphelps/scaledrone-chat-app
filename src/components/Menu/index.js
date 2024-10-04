@@ -67,7 +67,7 @@ export default function Menu({
               <span className="slider--theme round"></span>
             </label>
           </li> */}
-          {/* <li className="main-nav__menu-item" key="2">
+          <li className="main-nav__menu-item" key="2">
             Save chat on exit
             <label className="switch">
               {saveChat ? (
@@ -86,7 +86,7 @@ export default function Menu({
               )}
               <span className="slider round"></span>
             </label>
-          </li> */}
+          </li>
           <li className="main-nav__menu-item" key="3">
             Show chat history
             <label className="switch">
@@ -148,14 +148,14 @@ export default function Menu({
               ))}
             </ul>
           </li> */}
-          {/* <li className="main-nav__menu-item" key="6">
+          <li className="main-nav__menu-item" key="6">
             <span
               className="main-nav__span-action"
               onClick={() => handleExit(saveChat, chat, drone)}
             >
               Exit
             </span>
-          </li> */}
+          </li>
         </ul>
       </div>
     </nav>
