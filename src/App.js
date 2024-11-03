@@ -86,9 +86,17 @@ export default function App() {
     };
 
     const roomEvents = () => {
-      const room = drone.subscribe(`observable-${chat.member.room}`, { historyCount: 5 });
+      const room = drone.subscribe(`observable-${chat.member.room}`, { historyCount: 4 });
       // room.on('history_message', message => console.log(message));
-      room.on('history_message', message => chat.messages.push(message));
+      room.on('history_message', message => {
+        // console.log(chat);
+        // console.log(chat.member);
+        console.log(message);
+        // chat.messages.push(message);
+        if (!(message.data.includes(message.clientId))) {
+          chat.messages.push(message);
+        }
+    });
       room.on("open", (error) => {
         if (error) {
           console.error(error);
