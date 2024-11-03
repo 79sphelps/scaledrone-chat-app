@@ -29,7 +29,7 @@ export const handleShowHistory = (e, setShowHistory) => {
 };
 
 export const resetProfile = (drone, setDrone, setChat, setRoomReady) => {
-  localStorage.clear();
+  // localStorage.clear();
   drone.close();
   setDrone(null);
   setChat({

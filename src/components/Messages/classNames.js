@@ -8,10 +8,23 @@ export default function classNames(
   showHistory
 ) {
   const { member, id } = message;
-  const thisMemberMsg =
-    member.id === thisMember.id ||
-    message.from_me ||
-    member.clientData.id === initialMemberId;
+  // const thisMemberMsg =
+  //   member.id === thisMember.id ||
+  //   message.from_me ||
+  //   member.clientData.id === initialMemberId;
+
+  const thisMemberMsg = member.clientData.username === 'A' || member.clientData.username === 'Adelaide' ? false : true;
+
+// console.log('------')
+// console.log(message);
+// console.log('member.id: ', member.id);
+// console.log('thisMember.id: ', thisMember.id);
+// console.log('message.from_me: ', message.from_me);
+// console.log('member.clientData.id: ', member.clientData.id);
+// console.log('initialMemberId: ', initialMemberId);
+// console.log('thisMemberMsg: ', thisMemberMsg);
+
+
   let classNameMsg = thisMemberMsg
     ? "msg-list__msg msg-list__msg--thisMember"
     : "msg-list__msg";
