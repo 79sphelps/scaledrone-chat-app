@@ -86,7 +86,7 @@ export default function App() {
     };
 
     const roomEvents = () => {
-      const room = drone.subscribe(`observable-${chat.member.room}`, { historyCount: 50 });
+      const room = drone.subscribe(`observable-${chat.member.room}`, { historyCount: 500 });
       // room.on('history_message', message => console.log(message));
       room.on('history_message', message => {
         // console.log(chat);
