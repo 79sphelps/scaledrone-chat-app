@@ -93,8 +93,8 @@ export default function Messages({
     );
 
     const listItem =
-      sameMember !== member.id /* && sameMember !== initialMemberId */ ? (
-      // member.clientData.username === 'A' || member.clientData.username === 'Adelaide' || member.clientData.username === 'Daddy' ? (
+      // sameMember !== member.id /* && sameMember !== initialMemberId */ ? (
+      member.clientData.username === 'A' || member.clientData.username === 'Adelaide' || member.clientData.username === 'Daddy' ? (
         <li
           className={classNames(...classNameArgs, "classNameMsg", showHistory)}
           key={id}
